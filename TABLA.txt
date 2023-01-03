@@ -1,0 +1,18 @@
+-- DROP SCHEMA dbo;
+
+CREATE SCHEMA dbo;
+-- MVCCRUD.dbo.usuarios definition
+
+-- Drop table
+
+-- DROP TABLE MVCCRUD.dbo.usuarios;
+
+CREATE TABLE MVCCRUD.dbo.usuarios (
+	id int IDENTITY(0,1) NOT NULL,
+	nombre varchar(100) COLLATE Modern_Spanish_CI_AS NULL,
+	fecha date NULL,
+	clave varchar(100) COLLATE Modern_Spanish_CI_AS NULL,
+	CONSTRAINT usuarios_PK PRIMARY KEY (id)
+);
+
+
