@@ -1,0 +1,47 @@
+﻿@model MVCCRUD.Models.Usuario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 ">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Detalles usuario<small></small></h2>
+                <br />
+                <br />
+                <br />
+
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Nombre)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Fecha)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Fecha)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Clave)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Clave)
+                    </dd>
+                </dl>
+            </div>
+            <div class="text-center">
+                <a asp-action="Edit" class="btn btn-info" asp-route-id="@Model?.Id">Editar</a> |
+                <a asp-action="Index" class="btn btn-danger">Regresar</a>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
